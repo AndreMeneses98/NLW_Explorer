@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+}
+
+body {
+    background-color: #4A357D;
+    background-image: url('../img/Fundo.jpg');
+    color:white;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+/*Header*/
+
+.header .imgPerfil{
+    width: 120px;
+    height: 120px;
+}
+
+
+
+/*Container*/
+.descriptionBox{
+    color: #A1A1AA;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.container .containerBox{
+    background-color: #2A2634;
+    padding: 24px 32px 32px 32px;
+}
+
+.container #myCards{
+    width: 580px;
+    height: 264px;
+
+   
+}
+
+.container #chanells{
+    width: 580px;
+    height: 214px;
+}
+
+.container #socialMedia{
+    width: 580px;
+    height: 176px; 
+}
