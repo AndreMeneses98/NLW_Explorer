@@ -57,3 +57,10 @@ body {
     width: 580px;
     height: 176px; 
 }
+
+ul{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    list-style-type: none;
+}
