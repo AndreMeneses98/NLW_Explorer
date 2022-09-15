@@ -21,6 +21,10 @@ body {
     line-height: 160%;
 }
 /*Header*/
+.header{
+height: 164px;
+}
+
 .header div {
     padding: 5px;
     background-image: linear-gradient(90deg, #4A357D 0%, #43E7AD 50.52%, #E2D45C 100%, #E2D45C 100%);
@@ -28,7 +32,13 @@ body {
     width: 130px;
     height: 130px;
     margin-bottom: 34px;
+    transition: transform 0.3s;
 }
+
+.header div:hover{
+    transform: scale(1.1);
+}
+
 .header .imgPerfil{
     width: 120px;
     height: 120px;
@@ -63,7 +73,7 @@ body {
     background-image: linear-gradient(90deg, #4A357D 0%, #43E7AD 50.52%, #E2D45C 100%, #E2D45C 100%);
     padding-top: 5px;
     border-radius: 10px;
-    margin: 15px;
+   
     
 }
 
@@ -95,9 +105,70 @@ ul{
 }
 
 .container #myCards li img{
-    border-radius: 8px
+    border-radius: 8px;
+    
 }
 
 .container #chanells li img{
-    border-radius: 50%
+    border-radius: 50%;
+    
+}
+
+
+.container ul li{
+    transition: transform 0.3s;
+}
+
+.container ul li:hover{
+    transform: scale(1.1);  
+}
+
+/* Animation */
+
+.header div{
+    animation: fromTop 0.7s backwards;
+}
+
+.container section{
+    animation: toTop 0.7s backwards;
+}
+
+.container section:nth-child(0){
+    animation-delay: 0s;
+}
+
+.container section:nth-child(1){
+    animation-delay: 0.4s;
+}
+
+.container section:nth-child(2){
+    animation-delay: 0.7s;
+}
+
+@keyframes fromTop{
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes toTop{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
