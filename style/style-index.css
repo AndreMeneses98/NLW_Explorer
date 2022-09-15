@@ -130,7 +130,9 @@ ul{
 }
 
 .container section{
-    animation: toTop 0.7s backwards;
+   animation: toTop 0.7s backwards;
+ 
+     
 }
 
 .container section:nth-child(0){
@@ -171,4 +173,9 @@ ul{
         transform: translateY(0);
     }
 
+}
+
+/*@keyframes rgb { 
+    0%{background-position:0% 0%}
+   100%{background-position:100% 0%}
 }
